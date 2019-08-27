@@ -1,9 +1,11 @@
-package com.kotlin.foursquare
+package com.kotlin.foursquare.activitys
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.kotlin.foursquare.entities.Foursquare
+import com.kotlin.foursquare.R
 
 class MainActivity : AppCompatActivity() {
 

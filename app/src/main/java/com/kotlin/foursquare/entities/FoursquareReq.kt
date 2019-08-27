@@ -1,4 +1,4 @@
-package com.kotlin.foursquare
+package com.kotlin.foursquare.entities
 
 class FoursqueareRequest{
     var response: FoursqueareResponse? = null

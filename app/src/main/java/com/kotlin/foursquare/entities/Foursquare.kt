@@ -1,10 +1,11 @@
-package com.kotlin.foursquare
+package com.kotlin.foursquare.entities
 
 import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.foursquare.android.nativeoauth.FoursquareOAuth
+import com.kotlin.foursquare.activitys.Main2Activity
 
 class Foursquare(var activity:AppCompatActivity) {
 
