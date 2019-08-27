@@ -3,6 +3,7 @@ package com.kotlin.foursquare
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,12 +13,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var bFoursquare = findViewById<Button>(R.id.foursquare)
+
         fsq = Foursquare(this)
 
+        if(fsq!!.thereIsToken()){
+            startActivity(Intent(this, Main2Activity::class.java))
+            finish()
+        }
+
+        bFoursquare.setOnClickListener {
+            fsq?.logIn()
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        fsq.validateActivityResult(requestCode, resultCode, data)
+        fsq?.validateActivityResult(requestCode, resultCode, data)
     }
 }

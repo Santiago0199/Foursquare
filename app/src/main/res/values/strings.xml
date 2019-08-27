@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">foursquare</string>
+    <string name="llamar_la_api_de_foursqueare">Llamar la Api de Foursqueare</string>
 </resources>
