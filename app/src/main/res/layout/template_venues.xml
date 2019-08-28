@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
+    <ImageView
+            android:id="@+id/imageVenues"
+            android:layout_width="@dimen/sesentaycuatrodp"
+            android:layout_height="@dimen/sesentaycuatrodp"
+            android:layout_marginTop="@dimen/dieciseisdp"
+            android:layout_marginBottom="@dimen/dieciseisdp"
+            android:layout_marginLeft="@dimen/dieciseisdp"/>
 
     <TextView android:id="@+id/nameVenues"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:padding="20px"/>
+              android:padding="@dimen/diezdp"
+              android:layout_gravity="center_vertical"/>
 
 </LinearLayout>

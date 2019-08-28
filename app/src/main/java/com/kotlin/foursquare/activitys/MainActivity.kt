@@ -7,6 +7,9 @@ import android.widget.Button
 import com.kotlin.foursquare.entities.Foursquare
 import com.kotlin.foursquare.R
 
+/**
+ * @author Santiago Perdomo Forero
+ */
 class MainActivity : AppCompatActivity() {
 
     var fsq: Foursquare? = null
@@ -29,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Obtiene el resultado de las peticiones para hacer la conexión con foursqueare
+     */
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         fsq?.validateActivityResult(requestCode, resultCode, data)

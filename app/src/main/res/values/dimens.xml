@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesentaycuatrodp">64dp</dimen>
+    <dimen name="dieciseisdp">16dp</dimen>
+    <dimen name="diezdp">10dp</dimen>
+</resources>

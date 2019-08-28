@@ -7,6 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.foursquare.android.nativeoauth.FoursquareOAuth
 import com.kotlin.foursquare.activitys.Main2Activity
 
+/**
+ * @author Santiago Perdomo Forero
+ * Se encarga de hacer los procesos para la conexión con foursqueare
+ */
 class Foursquare(var activity:AppCompatActivity) {
 
     private val CODE_CONNECT = 200
